@@ -1,0 +1,81 @@
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  text-transform: uppercase;
+  background: #fff;
+  box-shadow: 1px 1px 5px -1px #d9d9d9;
+  position: fixed;
+  z-index: 99;
+  min-width: 1000px;
+  .navbar-before{
+    width: 50%;
+    padding-left: 4em;
+    min-width: 600px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+      text-decoration: none;
+      color: #908e8e;
+      font-size: 13px;
+      &:hover{
+        background: linear-gradient(to bottom right,  #00ADEE 0%, #8cc63f 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &.active{
+        font-weight: bold;
+        font-size: 12px;
+        background: linear-gradient(to bottom right,  #00ADEE 0%, #8cc63f 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .navbar-after{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    padding-right: 4em;
+    .MuiSvgIcon-root{
+      color: #8cc63f;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    span{
+      position: absolute;
+      background: #00adee;
+      color: white;
+      font-size: 13px;
+      padding: 0px 7px 2px;
+      border-radius: 50%;
+      margin: -5px 0 0 15px;
+    }
+    button{
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+      letter-spacing: 1.5px;
+      color: #ff6060;
+      font-size: 13px;
+      cursor: pointer;
+      &:hover{
+        background: linear-gradient(to bottom right, #00ADEE 0%, #8cc63f 100%);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 1em;
+      }
+    }
+  }
+}
+
+.content{
+  margin-top: 60px;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,28 @@
+.my-getplus{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    &>div{
+        padding: 1.5em 4em 0;
+        min-width: 1000px;
+    }
+    .getplus-header{
+        display: flex;
+    }
+    .getplus-container{
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        .getplus-sidenav{
+            width: 20%;
+            max-width: 260px;
+            min-width: 250px;
+        }
+        .getplus-content{
+            width: 75%;
+            min-width: 700px;
+            padding: 0 1em;
+            margin-left: 1.4em;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "voucher":[
+        {
+            "id":1,
+            "title":"Voucher 1 senilai Rp 100.000",
+            "point": 20000
+        },
+        {
+            "id":2,
+            "title":"Voucher 2 senilai Rp 100.000",
+            "point": 20000
+        },
+        {
+            "id":3,
+            "title":"Voucher 3 senilai Rp 100.000",
+            "point": 20000
+        },
+        {
+            "id":4,
+            "title":"Voucher 4 senilai Rp 100.000",
+            "point": 20000
+        }
+        
+    ],
+    "product":[
+        {
+            "id":1,
+            "title":"Product 1 senilai Rp 100.000",
+            "point": 20000
+        },{
+            "id":2,
+            "title":"Product 2 senilai Rp 100.000",
+            "point": 20000
+        },{
+            "id":3,
+            "title":"Product 3 senilai Rp 100.000",
+            "point": 20000
+        }
+    ]
+}

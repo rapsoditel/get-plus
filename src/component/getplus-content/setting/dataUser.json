@@ -1,0 +1,19 @@
+{
+    "USER_ID":"6094450088002163126",
+    "BADGE" : "Silver",
+    "PREFIX": "Mr",
+    "GIVEN_NAME": "Rapsodi",
+    "FAMILY_NAME": "Telaumbanua",
+    "DOB":"1996-06-26",
+    "PHONE" : "085297491756",
+    "EMAIL": "rapsoditel@gmail.com",
+    "ADDRESS" : "Jl. Berlian no. 4",
+    "SUBURB" : "Cengkareng",
+    "CITY" : "Jakarta Barat",
+    "COUNTRY" : "Indonesia",
+    "POSTCODE" : "11710",
+    "ACTIVE_POINT" : 0,
+    "GROUP_POINT" : 0,
+    "PENDING_POINT" : 20000,
+    "EXPIRE_POINT" : 0
+}

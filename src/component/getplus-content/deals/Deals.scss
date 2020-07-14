@@ -1,0 +1,82 @@
+.deals{
+    .page-title{
+        margin: 0 0 1em;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .button-control{
+        a{
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            text-decoration: none;
+            padding: 1em 0 .5em;
+            color: #02306b;
+            font-weight: 600;
+            margin-left: 1em;
+        }
+        a:first-of-type{
+            margin-left: 0;
+        }
+        .active{
+            color: #00adee;
+            border-bottom: 4px solid #00adee;
+        }
+    }
+    .deals-content{
+        padding: 1em 0;
+        .content-item{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: 0 -1.4em;
+            .deals-card{
+                margin: 1em 1.4em;
+                border-radius: 20px;
+                box-shadow: 0px 2px 4px 0px #d4d4d4;
+                cursor: pointer;
+                animation: fadeDrop .8s;
+                img{
+                    width: 100%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px
+                }
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1em;
+                    span:first-of-type{
+                        margin-bottom: 5px;
+                        color: #00adee;
+                        font-size: 1.1vw;
+                    }
+                    span{
+                        font-size: 1vw;
+                        font-weight: 600;
+                        color: #8cc63f;
+                    }
+                }
+                &:hover{
+                    scale: 1.05;
+                    animation: zoomIn 1s;
+                }
+            }
+        }
+        
+    }
+}
+
+@keyframes fadeDrop {
+    from {opacity: 0.5; margin-top: .5em;}
+    to {opacity: 1; margin-top: 1em;}
+}
+
+@keyframes zoomIn {
+    from {
+        scale: 1;
+        -webkit-transform:scale(1)
+    }
+    to {
+        scale: 1.05;
+        -webkit-transform:scale(1.05)
+    }
+}
