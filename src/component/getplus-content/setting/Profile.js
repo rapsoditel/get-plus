@@ -7,6 +7,7 @@ class Profile extends React.Component {
         dataPrefix: ['Mr', 'Ms', 'Mrs'],
         dataCountry: ['Indonesia', 'New Zealand'],
         userId: data.USER_ID,
+        prefix: data.PREFIX,
         givenName: data.GIVEN_NAME,
         familyName: data.FAMILY_NAME,
         dob: data.DOB,
@@ -30,7 +31,7 @@ class Profile extends React.Component {
     }
 
     render() {
-        let { dataPrefix, dataCountry, userId, givenName, familyName, dob, phone, email, address, suburb, city, postCode } = this.state
+        let { dataPrefix, dataCountry, userId, prefix, givenName, familyName, dob, phone, email, address, suburb, city, country, postCode } = this.state
         return (
             <React.Fragment>
                 <div className='profile'>
@@ -42,7 +43,7 @@ class Profile extends React.Component {
                             onChange={this.onValueChange}
                             disabled={true}
                         />
-                        <SelectBox label='Prefix' data={dataPrefix} />
+                        <SelectBox label='Prefix' data={dataPrefix} value={prefix}/>
                         <TextBox
                             id='givenName'
                             label='Given Name'
@@ -92,7 +93,7 @@ class Profile extends React.Component {
                             value={city}
                             onChange={this.onValueChange}
                         />
-                        <SelectBox label='Country' data={dataCountry} />
+                        <SelectBox label='Country' data={dataCountry} value={country}/>
                         <TextBox
                             id='postCode'
                             label='Postcode'

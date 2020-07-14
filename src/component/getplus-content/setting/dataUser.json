@@ -12,6 +12,7 @@
     "CITY" : "Jakarta Barat",
     "COUNTRY" : "Indonesia",
     "POSTCODE" : "11710",
+    "LANGUAGE" : "Indonesian",
     "ACTIVE_POINT" : 0,
     "GROUP_POINT" : 0,
     "PENDING_POINT" : 20000,

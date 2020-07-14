@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button, SelectBox } from '../../global'
+import data from './dataUser.json'
 
 class Preferences extends React.Component {
     state = {
+        language : data.LANGUAGE,
         data: [
             "English",
             "Arabic",
@@ -22,7 +24,7 @@ class Preferences extends React.Component {
         return (
             <React.Fragment>
                 <div className="preferences">
-                    <SelectBox data={this.state.data} />
+                    <SelectBox label="Language" data={this.state.data} value={this.state.language}/>
                     <Button text='Save Changes' onClick={this.onChangePassword} />
                 </div>
             </React.Fragment>

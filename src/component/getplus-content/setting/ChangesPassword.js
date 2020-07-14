@@ -3,9 +3,9 @@ import { TextBox, Button } from '../../global'
 
 class ChangesPassword extends React.Component {
     state = {
-        currentPass: null,
-        newPass: null,
-        confirmPass: null
+        currentPass: '',
+        newPass: '',
+        confirmPass: ''
     }
 
     onValueChange = (e) => {

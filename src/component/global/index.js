@@ -20,12 +20,12 @@ TextBox.defaultProps = {
     disabled: false
 }
 
-export const SelectBox = ({ label, data, width }) => {
+export const SelectBox = ({ label, data, width, value }) => {
     let source = [];
 
     if (data.length > 0) {
         for (let i = 0; i < data.length; i++) {
-            source.push(<option key={i}>{data[i]}</option>)
+            source.push(<option key={i} value={data[i]}>{data[i]}</option>)
         }
     } else {
         source.push(<option key={0}>No data</option>)
@@ -34,7 +34,7 @@ export const SelectBox = ({ label, data, width }) => {
         <React.Fragment>
             <div className='field select-box' style={{ width: width }}>
                 <label>{label}</label>
-                <select>
+                <select value={value}>
                     {source}
                 </select>
             </div>
