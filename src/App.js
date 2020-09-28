@@ -25,6 +25,7 @@ function App() {
 								<ShoppingCartOutlinedIcon/>
 							</div>
 							<button>Logout yyy</button>
+							<label>sasasasa</label>
 						</div>
 					</div>
 					<div className='content'>
