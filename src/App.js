@@ -24,7 +24,8 @@ function App() {
 								<span>0</span>
 								<ShoppingCartOutlinedIcon/>
 							</div>
-							<button>Logout</button>
+							<button>Logout yyy</button>
+							<label>sasasasa</label>
 						</div>
 					</div>
 					<div className='content'>
